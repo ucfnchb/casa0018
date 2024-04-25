@@ -38,7 +38,7 @@ Design a model architecture, training is the process by which a model learns to 
 
 ![image](https://github.com/ucfnchb/casa0018/assets/146333771/574414f3-1a8f-4172-aa64-5a938422e062)
 
-# Signal Processing Block
+### Signal Processing Block
 
 Configure the MFCC block to explore my data and examine the types of spectrograms it produces. Continue monitoring the on-device performance with different dataset parameters, including processing time and peak RAM usage. By generating features across all the data in the dataset, run the feature extraction pipeline and then visualize the dataset in 3D to see if it separates nicely or if there are problems with the dataset. The feature explorer allows me to assess the dataset quality and whether the data separates nicely before doing any machine learning. Figure 5, from the fourth experiment, shows that the unknown data and noise data are not nicely separated. In contrast, Figure 6 from the ninth experiment shows that “noise”, "Close curtain," and "Open curtain" datasets have good separation. This allows me to check whether the dataset contains incorrect items and to validate if my dataset is suitable for machine learning.
 
@@ -62,13 +62,13 @@ The next step is to deploy the model to my device, the Arduino Nano 33 BLE Sense
 
 ## Results and Observations
 
-# results
+### results
 
 The training outcomes indicate that the optimal parameter combination tested during the experimental phase resulted in an accuracy of 94.30% testing set and 92.40% training set. This represents a significant improvement from the lowest accuracy of 82.50%. Also, deploying the trained model on the Nano 33 BLE Sense demonstrated the practical application of TinyML in real-time voice recognition tasks within a smart home context.  With well-trained data exported form Edge Impulse，the Nano 33 BLE Sense performed very well. 
 
 ![image](https://github.com/ucfnchb/casa0018/assets/146333771/bd1d9cee-bfd6-468a-8b5b-a118ca5f72a4)
 
-# Observations
+### Observations
 
 Firstly, the high accuracy can be attributed to the quality of the dataset used in my training process. The ideal dataset was relevant and representative, covering enough voice recordings. The dataset was also balanced to prevent potential biases, with an even split of training samples into noise and command datasets. Additionally, the reliability was ensured through correctly labelled data that contained minimal noise. These factors collectively contributed to the marked increase in model accuracy. 
 Despite the high accuracy, the system sometimes failed to recognize commands correctly in noisy environments or when spoken by individuals with accents different from those in the training set. To improve this, the more diverse dataset, which included a variety of voices and background noises, need to be added for training a robust model.
