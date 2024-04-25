@@ -62,7 +62,7 @@ The next step is to deploy the model to my device, the Arduino Nano 33 BLE Sense
 
 ## Results and Observations
 
-### results
+### Results
 
 The training outcomes indicate that the optimal parameter combination tested during the experimental phase resulted in an accuracy of 94.30% testing set and 92.40% training set. This represents a significant improvement from the lowest accuracy of 82.50%. Also, deploying the trained model on the Nano 33 BLE Sense demonstrated the practical application of TinyML in real-time voice recognition tasks within a smart home context.  With well-trained data exported form Edge Impulse，the Nano 33 BLE Sense performed very well. 
 
